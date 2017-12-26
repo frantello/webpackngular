@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>webpackngular</title>
   </head>
-  <body ng-app="">
+  <body ng-app="app">
     <h1>webpackngular</h1>
-    <p>{{ 1 + 1 }}</p>
+    <a ui-sref="state" ui-sref-active="active">State</a>
+    <ui-view></ui-view>
+    <p ng-controller="IndexCtrl as index">{{ index.total | currency }}</p>
     <script src="bundle.js"></script>
   </body>
 </html>

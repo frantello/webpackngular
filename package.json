@@ -1,7 +1,7 @@
 {
   "name": "webpackngular",
   "version": "1.0.0",
-  "description": "Using angular 1.6 and building with webpack 2",
+  "description": "Using angular 1.6 and building with webpack 3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/frantello/webpackngular#readme",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.12",
     "angular": "^1.6.7"
   },
   "devDependencies": {
