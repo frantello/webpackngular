@@ -1,15 +1,36 @@
 <!doctype html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>webpackngular</title>
   </head>
-  <body ng-app="app">
-    <h1>webpackngular</h1>
-    <a ui-sref="state" ui-sref-active="active">State</a>
-    <ui-view></ui-view>
-    <p ng-controller="IndexCtrl as index">{{ index.total | currency }}</p>
+  <body ng-cloak>
     <script src="bundle.js"></script>
+
+    <header>
+      <h1>webpackngular</h1>
+    </header>
+
+    <nav>
+      <li>
+        <ul><a ui-sref="blogState" ui-sref-active="active">Blog</a></ul>
+        <ul><a ui-sref="aboutState">About</a></ul>
+        <ul><a ui-sref="contactState">Contact</a></ul>
+      </li>
+    </nav>
+
+    <main>
+      <ui-view></ui-view>
+      <p ng-controller="IndexCtrl as index">{{ index.total | currency }}</p>
+    </main>
+
+    <aside>
+      Timeline
+    </aside>
+
+    <footer>
+      Fran Tello - 2017
+    </footer>
   </body>
 </html>

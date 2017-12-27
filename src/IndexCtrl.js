@@ -1,3 +1,3 @@
 export default function () {
-  this.total = 5;
+  this.total = 6;
 }
