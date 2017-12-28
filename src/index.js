@@ -20,7 +20,7 @@ blog.controller("AboutCtrl", ["$scope", AboutCtrl]);
 const contact = angular.module("app.contact", []);
 blog.controller("ContactCtrl", ["$scope", ContactCtrl]);
 
-app.service("BlogSvc", ["$q", "$http", BlogSvc]);
+app.service("BlogSvc", ["$http", BlogSvc]);
 
 app.config(function ($stateProvider) {
   $stateProvider.state({

@@ -1,8 +1,6 @@
-function BlogSvc($q, $http) {
-  this.findAll = function () {
-    return $http.get("./data/posts.json").then(function (response) {
-      return response.data;
-    });
+function BlogSvc($http) {
+  this.findPosts = function () {
+    return $http.get("./data/posts.json").then(response => response.data);
   };
 }
 

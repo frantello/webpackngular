@@ -15,7 +15,7 @@ BlogCtrl.$inject = ["_posts"];
 
 BlogCtrl.resolve = {
   _posts: function (BlogSvc) {
-    return BlogSvc.findAll();
+    return BlogSvc.findPosts();
   }
 }
 
